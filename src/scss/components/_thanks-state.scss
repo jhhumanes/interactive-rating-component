@@ -1,0 +1,28 @@
+.thanks-state {
+  background-color: var(--very-dark-blue);
+  border-radius: 1.75rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.thanks-state__result {
+  color: var(--orange);
+  background-color: var(--dark-blue);
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  font-size: .9rem;
+}
+
+.thanks-state__title {
+  color: var(--white);
+  font-size: 1.75rem;
+}
+
+.thanks-state__description {
+  color: var(--medium-grey);
+  text-align: center;
+}

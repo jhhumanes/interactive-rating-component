@@ -1,0 +1,24 @@
+@use '../abstracts/mixins' as *;
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--very-dark-blue);
+
+  @include from-breakpoint('desktop') {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+.visible {
+  display: inline-flex;
+}
+
+.invisible {
+  display: none;
+}

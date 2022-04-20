@@ -1,0 +1,81 @@
+@use '../abstracts/mixins' as *;
+
+.rating-state {
+  background-color: var(--dark-blue);
+  border-radius: 1.75rem;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.5rem;
+  max-width: 400px;
+}
+
+.rating-state__star {
+  background-color: var(--medium-grey);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-state__question {
+  color: var(--white);
+  font-size: 1.75rem;
+}
+
+.rating-state__description {
+  color: var(--medium-grey);
+}
+
+.rating-state__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-state__option {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  
+  @include from-breakpoint('mobile') {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.rating-state__option.rating-state__option--unselected:hover {
+  background: var(--light-grey);
+  color: var(--white);
+}
+
+.rating-state__option--selected {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.rating-state__option--unselected {
+  background: var(--medium-grey);
+  color: var(--white);
+}
+
+.rating-state__submit > button {
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1rem .5rem;
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  cursor: pointer;
+}

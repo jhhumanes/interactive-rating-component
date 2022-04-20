@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/main.css" />
+    <script defer src="./dist/app.js"></script>
+  </head>
+  <body>
+    <div class="rating">
+      <div class="rating-state visible" id="rating-state">
+        <div class="rating-state__star">
+          <img src="./images/icon-star.svg" alt="Star" />
+        </div>
+        <div class="rating-state__question">
+          <p>How did we do?</p>
+        </div>
+        <div class="rating-state__description">
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div>
+          <ul class="rating-state__options">
+            <li>
+              <button
+                data-value="1"
+                class="rating-state__option rating-state__option--unselected"
+              >
+                1
+              </button>
+            </li>
+            <li>
+              <button
+                data-value="2"
+                class="rating-state__option rating-state__option--unselected"
+              >
+                2
+              </button>
+            </li>
+            <li>
+              <button
+                data-value="3"
+                class="rating-state__option rating-state__option--unselected"
+              >
+                3
+              </button>
+            </li>
+            <li>
+              <button
+                data-value="4"
+                class="rating-state__option rating-state__option--unselected"
+              >
+                4
+              </button>
+            </li>
+            <li>
+              <button
+                data-value="5"
+                class="rating-state__option rating-state__option--unselected"
+              >
+                5
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="rating-state__submit">
+          <button id="submit-button">Submit</button>
+        </div>
+      </div>
+
+      <div class="thanks-state invisible" id="thanks-state">
+        <div class="thanks-state__image">
+          <img src="./images/illustration-thank-you.svg" alt="Thanks" />
+        </div>
+        <div class="thanks-state__result">
+          <p>
+            You selected
+            <span id="result"></span> out of 5
+          </p>
+        </div>
+        <div class="thanks-state__title">
+          <p>Thank you!</p>
+        </div>
+        <div class="thanks-state__description">
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://josehumaneshumanes.com">José Humanes Humanes</a>.
+    </div>
+  </body>
+</html>

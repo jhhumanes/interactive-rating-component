@@ -1,0 +1,13 @@
+@use 'breakpoints' as *;
+
+@mixin from-breakpoint($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media screen and (min-width: map-get($breakpoints, $size)) {
+      @content;
+    }
+  } @else if type-of($size) == number and unit($size) == 'px' {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
+}
